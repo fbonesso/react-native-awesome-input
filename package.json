@@ -1,0 +1,11 @@
+{
+  "name": "react-native-awesome-input",
+  "version": "1.0.0",
+  "description": "React Native Awesome Input",
+  "main": "src/AwesomeInput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Bonesso",
+  "license": "ISC"
+}
