@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-input",
+  "name": "@bonesso/react-native-awesome-input",
   "version": "1.0.0",
   "description": "React Native Awesome Input",
   "main": "src/AwesomeInput.js",
