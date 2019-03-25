@@ -7,5 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felipe Bonesso",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbonesso/react-native-awesome-input.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "text",
+    "input",
+    "input",
+    "awesome",
+    "expo"
+  ],
+  "bugs": {
+    "url": "https://github.com/fbonesso/react-native-awesome-input/issues"
+  },
+  "homepage": "https://github.com/fbonesso/react-native-awesome-input#readme"
 }
