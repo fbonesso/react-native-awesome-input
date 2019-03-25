@@ -1,17 +1,41 @@
 {
-  "name": "@bonesso/react-native-awesome-input",
-  "version": "1.0.0",
-  "description": "React Native Awesome Input",
-  "main": "src/AwesomeInput.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Felipe Bonesso",
-  "license": "ISC",
-  "repository": {
+  "_from": "git+https://github.com/fbonesso/react-native-awesome-input.git",
+  "_id": "@bonesso/react-native-awesome-input@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@bonesso/react-native-awesome-input",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "git+https://github.com/fbonesso/react-native-awesome-input.git"
+    "raw": "@bonesso/react-native-awesome-input@git+https://github.com/fbonesso/react-native-awesome-input.git",
+    "name": "@bonesso/react-native-awesome-input",
+    "escapedName": "@bonesso%2freact-native-awesome-input",
+    "scope": "@bonesso",
+    "rawSpec": "git+https://github.com/fbonesso/react-native-awesome-input.git",
+    "saveSpec": "git+https://github.com/fbonesso/react-native-awesome-input.git",
+    "fetchSpec": "https://github.com/fbonesso/react-native-awesome-input.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/fbonesso/react-native-awesome-input.git#37ef0b46e3a0049ca47245a22dfcff16f99c4945",
+  "_spec": "@bonesso/react-native-awesome-input@git+https://github.com/fbonesso/react-native-awesome-input.git",
+  "_where": "/Users/bonesso/GitLab/univen-mobile-expo",
+  "author": {
+    "name": "Felipe Bonesso"
+  },
+  "bugs": {
+    "url": "https://github.com/fbonesso/react-native-awesome-input/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React Native Awesome Input",
+  "dependencies": {
+    "react-native-masked-text": "^1.11.1"
+  },
+  "homepage": "https://github.com/fbonesso/react-native-awesome-input#readme",
   "keywords": [
     "react",
     "native",
@@ -21,8 +45,15 @@
     "awesome",
     "expo"
   ],
-  "bugs": {
-    "url": "https://github.com/fbonesso/react-native-awesome-input/issues"
+  "license": "ISC",
+  "main": "src/AwesomeInput.js",
+  "name": "@bonesso/react-native-awesome-input",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbonesso/react-native-awesome-input.git"
   },
-  "homepage": "https://github.com/fbonesso/react-native-awesome-input#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
