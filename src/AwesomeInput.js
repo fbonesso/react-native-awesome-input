@@ -17,7 +17,7 @@ const AwesomeInput = props => {
   } = props;
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { width: props.width - 20 }]}>
       <View style={[styles.iconContainer, {
         backgroundColor: props.iconBackgroundColor,
         borderTopLeftRadius: props.borderRadius,
@@ -31,7 +31,7 @@ const AwesomeInput = props => {
       </View>
       {props.type == "default" ?
         <TextInput
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           {...props}
         />
       :null}
@@ -43,7 +43,7 @@ const AwesomeInput = props => {
             withDDD: true,
             dddMask: '(99) '
           }}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -52,7 +52,7 @@ const AwesomeInput = props => {
       {props.type == "cpf" ?
         <TextInputMask
           type={'cpf'}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -61,7 +61,7 @@ const AwesomeInput = props => {
       {props.type == "cnpj" ?
         <TextInputMask
           type={'cnpj'}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -77,7 +77,7 @@ const AwesomeInput = props => {
             unit: '',
             suffixUnit: ''
           }}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -86,7 +86,7 @@ const AwesomeInput = props => {
       {props.type == "number" ?
         <TextInputMask
           type={'only-numbers'}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -95,7 +95,7 @@ const AwesomeInput = props => {
       {props.type == "cep" ?
         <TextInputMask
           type={'zip-code'}
-          style={styles.input}
+          style={[styles.input, { width: props.width - 70 }]}
           placeholder={props.placeholder}
           value={props.value}
           onChangeText={props.onChangeText}
@@ -110,6 +110,7 @@ AwesomeInput.propTypes = {
   iconName: PropTypes.string,
   iconBackgroundColor: PropTypes.string,
   type: PropTypes.string,
+  width: PropTypes.number,
 };
 
 AwesomeInput.defaultProps = {
@@ -117,11 +118,11 @@ AwesomeInput.defaultProps = {
   iconName: "pencil",
   iconBackgroundColor: "#333",
   type: "default",
+  width: Dimensions.get("window").width,
 };
 
 const styles = StyleSheet.create({
   container: {
-    width: Dimensions.get("window").width - 20,
     height: 50,
     flexDirection: 'row',
     backgroundColor: '#fff',
@@ -146,8 +147,7 @@ const styles = StyleSheet.create({
   },
   input: {
     paddingLeft: 10,
-    height: 50,
-    width: Dimensions.get("window").width - 70,
+    height: 50
   }
 });
 
